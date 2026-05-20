@@ -1,0 +1,211 @@
+/* =============================================
+   base.css — Variables, Reset, Shared Utilities
+   ============================================= */
+
+/* --- CSS Variables --- */
+:root {
+  --bg:        #07090f;
+  --bg2:       #0d1117;
+  --bg3:       #111823;
+  --accent:    #f04e23;
+  --accent2:   #0ea5e9;
+  --accent3:   #22d3ee;
+  --text:      #e2e8f0;
+  --muted:     #64748b;
+  --border:    #1e2d3d;
+
+  --mono:    'JetBrains Mono', monospace;
+  --display: 'Bebas Neue', sans-serif;
+  --sans:    'Syne', sans-serif;
+}
+
+/* --- Reset --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+/* --- Grid Background --- */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(14, 165, 233, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 165, 233, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* --- Shared Section Layout --- */
+section {
+  padding: 6rem 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.section-header {
+  margin-bottom: 3.5rem;
+}
+
+.section-tag {
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-tag::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.section-title {
+  font-family: var(--display);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  letter-spacing: 3px;
+  color: #fff;
+  line-height: 1;
+}
+
+/* --- Divider --- */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  margin: 0;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-family: var(--mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-family: var(--mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+
+.btn-ghost:hover {
+  background: rgba(14, 165, 233, 0.08);
+}
+
+/* --- Terminal Block --- */
+.terminal {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border);
+  padding: 1.25rem 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.75rem;
+}
+
+.terminal-bar {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.dot       { width: 10px; height: 10px; border-radius: 50%; }
+.dot-r     { background: #ff5f57; }
+.dot-y     { background: #febc2e; }
+.dot-g     { background: #28c840; }
+
+.terminal-line { color: var(--muted); line-height: 2; }
+.terminal-line .prompt  { color: var(--accent2); }
+.terminal-line .cmd     { color: var(--text); }
+.terminal-line .out     { color: #4ade80; font-size: 0.7rem; }
+
+/* --- Cursor Animation --- */
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background: var(--accent);
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* --- Scroll Reveal --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  section {
+    padding: 4rem 1.25rem;
+  }
+}

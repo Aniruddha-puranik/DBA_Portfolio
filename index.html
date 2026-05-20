@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aniruddha Puranik | Oracle DBA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#">AP</a>
+
+    <!-- Desktop links -->
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#recognition">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger (mobile only) -->
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile fullscreen drawer -->
+  <ul class="nav-drawer" id="nav-drawer">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#recognition">Awards</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-inner">
+      <div class="hero-tag">Hello there! I am</div>
+      <h1 class="hero-name">ANIRUDDHA<br><span>PURANIK</span></h1>
+      <div class="hero-title">ORACLE DATABASE ADMINISTRATOR</div>
+      <p class="hero-desc">
+        System Engineer at Tata Consultancy Services, managing enterprise-scale Oracle databases
+        for Primark's global Retail &amp; Supply Chain environments. Automation-first DBA with an intrest in Gen AI.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary">View My Work &#8594;</a>
+        <a href="https://www.linkedin.com/in/aniruddha-puranik" target="_blank" class="btn-ghost">LinkedIn &#8599;</a>
+        <a href="mailto:Aniruddha.puranik2001@gmail.com" class="btn-ghost">Contact</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">70%</div>
+          <div class="stat-label">Manuall Efforts Reduced</div>
+          <div class="stat-label">with Automation</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">Years Production</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI Certifications</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Animated Oracle DB Architecture Visual -->
+    <div class="hero-visual">
+      <svg viewBox="0 0 520 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="cylTop" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#0369a1" stop-opacity="0.5"/>
+          </linearGradient>
+          <linearGradient id="cylBody" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#0c2a3d"/>
+            <stop offset="100%" stop-color="#071520"/>
+          </linearGradient>
+          <linearGradient id="cylAccent" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#f04e23" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="#7c2010" stop-opacity="0.4"/>
+          </linearGradient>
+          <linearGradient id="nodeBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.05"/>
+          </linearGradient>
+          <linearGradient id="nodeOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f04e23" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#f04e23" stop-opacity="0.05"/>
+          </linearGradient>
+          <filter id="glow-blue">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="glow-orange">
+            <feGaussianBlur stdDeviation="4" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <!-- ── Pulse rings (center) ───────────────── -->
+        <ellipse class="svg-ring" cx="260" cy="200" rx="90" ry="30" stroke="#0ea5e9" stroke-width="1" fill="none"/>
+        <ellipse class="svg-ring" cx="260" cy="200" rx="115" ry="38" stroke="#0ea5e9" stroke-width="0.7" fill="none"/>
+        <ellipse class="svg-ring" cx="260" cy="200" rx="140" ry="46" stroke="#0ea5e9" stroke-width="0.4" fill="none"/>
+
+        <!-- ── Connection lines ────────────────────── -->
+        <!-- center → top-left node -->
+        <line x1="260" y1="170" x2="100" y2="80" stroke="#1e2d3d" stroke-width="1.5"/>
+        <!-- center → top-right node -->
+        <line x1="260" y1="170" x2="410" y2="80" stroke="#1e2d3d" stroke-width="1.5"/>
+        <!-- center → bottom-left node -->
+        <line x1="260" y1="270" x2="90" y2="370" stroke="#1e2d3d" stroke-width="1.5"/>
+        <!-- center → bottom-right node -->
+        <line x1="260" y1="270" x2="430" y2="370" stroke="#1e2d3d" stroke-width="1.5"/>
+        <!-- center → bottom node -->
+        <line x1="260" y1="290" x2="260" y2="420" stroke="#1e2d3d" stroke-width="1.5"/>
+
+        <!-- ── Traveling dots on connection lines ──── -->
+        <!-- top-left line -->
+        <circle class="svg-dot" r="3" fill="#0ea5e9" filter="url(#glow-blue)">
+          <animateMotion dur="2.5s" repeatCount="indefinite" begin="0s">
+            <mpath href="#path-tl"/>
+          </animateMotion>
+        </circle>
+        <path id="path-tl" d="M260,170 L100,80" fill="none"/>
+
+        <!-- top-right line -->
+        <circle class="svg-dot" r="3" fill="#f04e23" filter="url(#glow-orange)">
+          <animateMotion dur="2.5s" repeatCount="indefinite" begin="0.8s">
+            <mpath href="#path-tr"/>
+          </animateMotion>
+        </circle>
+        <path id="path-tr" d="M260,170 L410,80" fill="none"/>
+
+        <!-- bottom-left -->
+        <circle class="svg-dot" r="3" fill="#0ea5e9" filter="url(#glow-blue)">
+          <animateMotion dur="2.8s" repeatCount="indefinite" begin="0.4s">
+            <mpath href="#path-bl"/>
+          </animateMotion>
+        </circle>
+        <path id="path-bl" d="M260,270 L90,370" fill="none"/>
+
+        <!-- bottom-right -->
+        <circle class="svg-dot" r="3" fill="#f04e23" filter="url(#glow-orange)">
+          <animateMotion dur="2.8s" repeatCount="indefinite" begin="1.2s">
+            <mpath href="#path-br"/>
+          </animateMotion>
+        </circle>
+        <path id="path-br" d="M260,270 L430,370" fill="none"/>
+
+        <!-- bottom center -->
+        <circle class="svg-dot" r="3" fill="#22d3ee" filter="url(#glow-blue)">
+          <animateMotion dur="2.2s" repeatCount="indefinite" begin="0.6s">
+            <mpath href="#path-bc"/>
+          </animateMotion>
+        </circle>
+        <path id="path-bc" d="M260,290 L260,420" fill="none"/>
+
+        <!-- ── Satellite Nodes (floating) ───────────── -->
+
+        <!-- Top-left: Shell / Automation -->
+        <g class="svg-node" style="transform-origin:100px 80px">
+          <rect x="50" y="50" width="100" height="60" rx="4" fill="url(#nodeOrange)" stroke="#f04e23" stroke-width="1" stroke-opacity="0.5"/>
+          <text x="100" y="75" fill="#f04e23" font-size="8" font-family="JetBrains Mono,monospace" text-anchor="middle" letter-spacing="1">SHELL</text>
+          <text x="100" y="90" fill="#64748b" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="middle">AUTOMATION</text>
+          <!-- mini cylinder icon -->
+          <ellipse cx="100" cy="100" rx="12" ry="4" fill="none" stroke="#f04e23" stroke-width="0.8" stroke-opacity="0.4"/>
+          <line x1="88" y1="100" x2="88" y2="108" stroke="#f04e23" stroke-width="0.8" stroke-opacity="0.3"/>
+          <line x1="112" y1="100" x2="112" y2="108" stroke="#f04e23" stroke-width="0.8" stroke-opacity="0.3"/>
+          <ellipse cx="100" cy="108" rx="12" ry="4" fill="none" stroke="#f04e23" stroke-width="0.8" stroke-opacity="0.3"/>
+        </g>
+
+        <!-- Top-right: OEM / Monitoring -->
+        <g class="svg-node" style="transform-origin:410px 80px">
+          <rect x="360" y="50" width="100" height="60" rx="4" fill="url(#nodeBlue)" stroke="#0ea5e9" stroke-width="1" stroke-opacity="0.5"/>
+          <text x="410" y="75" fill="#0ea5e9" font-size="8" font-family="JetBrains Mono,monospace" text-anchor="middle" letter-spacing="1">OEM</text>
+          <text x="410" y="90" fill="#64748b" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="middle">MONITORING</text>
+          <!-- heartbeat line -->
+          <polyline points="375,105 383,105 387,95 392,112 397,99 402,105 435,105" fill="none" stroke="#0ea5e9" stroke-width="1" stroke-opacity="0.6"/>
+        </g>
+
+        <!-- Bottom-left: RMAN / Backup -->
+        <g class="svg-node" style="transform-origin:90px 370px">
+          <rect x="35" y="345" width="110" height="60" rx="4" fill="url(#nodeBlue)" stroke="#0ea5e9" stroke-width="1" stroke-opacity="0.5"/>
+          <text x="90" y="368" fill="#0ea5e9" font-size="8" font-family="JetBrains Mono,monospace" text-anchor="middle" letter-spacing="1">RMAN</text>
+          <text x="90" y="382" fill="#64748b" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="middle">BACKUP + RECOVERY</text>
+          <!-- shield icon -->
+          <path d="M82,390 Q90,394 98,390 L98,398 Q90,403 82,398 Z" fill="none" stroke="#0ea5e9" stroke-width="0.8" stroke-opacity="0.5"/>
+        </g>
+
+        <!-- Bottom-right: Data Pump -->
+        <g class="svg-node" style="transform-origin:430px 370px">
+          <rect x="375" y="345" width="110" height="60" rx="4" fill="url(#nodeOrange)" stroke="#f04e23" stroke-width="1" stroke-opacity="0.5"/>
+          <text x="430" y="368" fill="#f04e23" font-size="8" font-family="JetBrains Mono,monospace" text-anchor="middle" letter-spacing="1">DATA PUMP</text>
+          <text x="430" y="382" fill="#64748b" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="middle">EXPORT / IMPORT</text>
+          <!-- arrow icon -->
+          <line x1="408" y1="396" x2="452" y2="396" stroke="#f04e23" stroke-width="1" stroke-opacity="0.5"/>
+          <polyline points="446,391 452,396 446,401" fill="none" stroke="#f04e23" stroke-width="1" stroke-opacity="0.5"/>
+        </g>
+
+        <!-- Bottom center: Gen AI -->
+        <g class="svg-node" style="transform-origin:260px 435px">
+          <rect x="205" y="420" width="110" height="45" rx="4" fill="url(#nodeBlue)" stroke="#22d3ee" stroke-width="1" stroke-opacity="0.5"/>
+          <text x="260" y="440" fill="#22d3ee" font-size="8" font-family="JetBrains Mono,monospace" text-anchor="middle" letter-spacing="1">GEN AI</text>
+          <text x="260" y="456" fill="#64748b" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="middle">OCI • ORACLE AI</text>
+        </g>
+
+        <!-- ── Central Oracle DB Cylinder ───────────── -->
+
+        <!-- Cylinder body -->
+        <rect x="200" y="188" width="120" height="100" fill="url(#cylBody)" stroke="#1e2d3d" stroke-width="1.5"/>
+
+        <!-- Horizontal stripe lines on body -->
+        <line x1="200" y1="210" x2="320" y2="210" stroke="#0ea5e9" stroke-width="0.4" stroke-opacity="0.3"/>
+        <line x1="200" y1="228" x2="320" y2="228" stroke="#0ea5e9" stroke-width="0.4" stroke-opacity="0.2"/>
+        <line x1="200" y1="246" x2="320" y2="246" stroke="#0ea5e9" stroke-width="0.4" stroke-opacity="0.2"/>
+        <line x1="200" y1="264" x2="320" y2="264" stroke="#0ea5e9" stroke-width="0.4" stroke-opacity="0.3"/>
+
+        <!-- Cylinder top ellipse (shimmer) -->
+        <ellipse class="svg-shimmer" cx="260" cy="188" rx="60" ry="20" fill="url(#cylTop)" stroke="#0ea5e9" stroke-width="1.5"/>
+
+        <!-- Cylinder bottom ellipse -->
+        <ellipse cx="260" cy="288" rx="60" ry="20" fill="#0c2a3d" stroke="#1e2d3d" stroke-width="1.5"/>
+
+        <!-- Oracle label on cylinder -->
+        <text x="260" y="234" fill="#e2e8f0" font-size="10" font-family="JetBrains Mono,monospace" text-anchor="middle" letter-spacing="2" font-weight="700">ORACLE</text>
+        <text x="260" y="250" fill="#0ea5e9" font-size="8" font-family="JetBrains Mono,monospace" text-anchor="middle" letter-spacing="1">19c</text>
+        <text x="260" y="265" fill="#64748b" font-size="6.5" font-family="JetBrains Mono,monospace" text-anchor="middle" letter-spacing="1">CDB / PDB</text>
+
+        <!-- Orange accent stripe on cylinder -->
+        <rect x="200" y="188" width="4" height="100" fill="url(#cylAccent)"/>
+
+        <!-- ── Top label ──────────────────────────── -->
+        <text x="260" y="35" fill="#64748b" font-size="7.5" font-family="JetBrains Mono,monospace" text-anchor="middle" letter-spacing="2">ENTERPRISE DB ARCHITECTURE</text>
+        <line x1="180" y1="40" x2="230" y2="40" stroke="#1e2d3d" stroke-width="1"/>
+        <line x1="290" y1="40" x2="340" y2="40" stroke="#1e2d3d" stroke-width="1"/>
+
+      </svg>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header reveal">
+      <div class="section-tag">Profile</div>
+      <div class="section-title">ABOUT ME</div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a <strong>Oracle Database Administrator</strong> with hands-on experience managing <strong>Production</strong> and <strong>Non-Production</strong> Oracle environments for Retail and SCM systems.</p>
+
+<p>Skilled in <strong>Oracle Database Administration</strong>, <strong>Grid & Database Patching</strong>, <strong>automation development</strong>, incident management, <strong>database refresh activities</strong >, and operational support.</p>
+
+<p>Experienced in <strong>Oracle RAC</strong>, <strong>ASM</strong>, <strong>CDB/PDB architecture</strong>, <strong>OEM monitoring</strong>, shell scripting, and resolving production issues within SLA-driven enterprise environments.</p>
+
+<p>My focus is on <strong>automation</strong> — eliminating manual toil from DBA workflows. I built the end-to-end SCM CPU patching framework (solo), created the DB Sanity Check script, and post-patching verification scripts ensuring operational efficiency, and maintaining production stability..</p>
+        <p>Placed <strong>2nd at TCS AI Friday Hackathon</strong>. When I'm not debugging production,
+          I build side projects — my latest is a <strong>Solo Leveling-inspired gamified habit tracker</strong>.</p>
+
+        <div class="terminal">
+          <div class="terminal-bar">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+          </div>
+          <div class="terminal-line"><span class="prompt">$ </span><span class="cmd">whoami</span></div>
+          <div class="terminal-line"><span class="out">aniruddha.puranik @ TCS | Oracle DBA | System Engineer</span></div>
+          <div class="terminal-line"><span class="prompt">$ </span><span class="cmd">cat current_role.txt</span></div>
+          <div class="terminal-line"><span class="out">DBA for Primark SCM + Retail Oracle DB estate</span></div>
+          <div class="terminal-line"><span class="prompt">$ </span><span class="cmd">echo $STACK</span></div>
+          <div class="terminal-line"><span class="out">Oracle 19c | Shell scripting | CDB/PDB | OEM | RMAN | Data Pump | Patching | Refresh | Automation</span></div>
+          <div class="terminal-line"><span class="prompt">$ </span><span class="cmd">uptime</span></div>
+          <div class="terminal-line"><span class="out">2+ years &bull; always available &bull; 0 missed SLAs<span class="cursor"></span></span></div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="about-panel">
+          <div class="panel-title">Certifications</div>
+          <div class="cert-item">
+            <div class="cert-dot"></div>
+            <div>
+              <div class="cert-name">Oracle AI Foundations</div>
+              <div class="cert-issuer">ORACLE &bull; 2025</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-dot"></div>
+            <div>
+              <div class="cert-name">Oracle Cloud Infrastructure Gen AI Professional</div>
+              <div class="cert-issuer">ORACLE &bull; 2025</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-dot"></div>
+            <div>
+              <div class="cert-name">Generative AI Professional Certificate</div>
+              <div class="cert-issuer">MICROSOFT / LINKEDIN &bull; 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-panel" style="margin-top:1.5rem">
+          <div class="panel-title">Current Environment</div>
+          <div class="cert-item">
+            <div class="cert-dot" style="background:var(--accent2)"></div>
+            <div>
+              <div class="cert-name">Client</div>
+              <div class="cert-issuer">PRIMARK — Global Fashion Retail</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-dot" style="background:var(--accent2)"></div>
+            <div>
+              <div class="cert-name">Domains</div>
+              <div class="cert-issuer">RETAIL + SUPPLY CHAIN MANAGEMENT (SCM)</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-dot" style="background:var(--accent2)"></div>
+            <div>
+              <div class="cert-name">Scope</div>
+              <div class="cert-issuer">PROD + NON-PROD ENVIRONMENTS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <div class="section-tag">Capabilities</div>
+      <div class="section-title">SKILLS</div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-category">Oracle Core</div>
+        <div class="skill-list">
+          <span class="skill-tag hot">Oracle 19c</span>
+          <span class="skill-tag hot">CDB / PDB</span>
+          <span class="skill-tag hot">Multitenant</span>
+          <span class="skill-tag hot">CPU Patching</span>
+          <span class="skill-tag">RMAN</span>
+          <span class="skill-tag">Data Pump</span>
+          <span class="skill-tag">OEM</span>
+          <span class="skill-tag">RAC</span>
+          <span class="skill-tag">Tablespace Mgmt</span>
+          <span class="skill-tag">Object Recovery</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-category">Automation & Scripting</div>
+        <div class="skill-list">
+          <span class="skill-tag hot">Shell Scripting</span>
+          <span class="skill-tag hot">Patching Automation</span>
+          <span class="skill-tag hot">Sanity Frameworks</span>
+          <span class="skill-tag">Cron Jobs</span>
+          <span class="skill-tag hot">DB Maintenance Scripts</span>
+          <span class="skill-tag">Defragmentation Scripts</span>
+          <span class="skill-tag">SOP Authoring</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-category">Performance & Operations</div>
+        <div class="skill-list">
+          <span class="skill-tag hot">Performance Tuning</span>
+          <span class="skill-tag hot">Space Management</span>
+          <span class="skill-tag">OEM Alert Handling</span>
+          <span class="skill-tag">Incident Management</span>
+          <span class="skill-tag hot">Database Refresh</span>
+          <span class="skill-tag">Audit Extracts</span>
+          <span class="skill-tag">KB Documentation</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-category">Ecosystem & AI</div>
+        <div class="skill-list">
+          <span class="skill-tag hot">Gen AI Tools</span>
+          <span class="skill-tag hot">SQL</span>
+          <span class="skill-tag hot">WINSCP</span>
+          <span class="skill-tag">Oracle WebLogic</span>
+          <span class="skill-tag">OCI</span>
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Informatica</span>
+          <span class="skill-tag">HTML / CSS / JS</span>
+          <span class="skill-tag">React</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- WORK HIGHLIGHTS -->
+  <section id="work">
+    <div class="section-header reveal">
+      <div class="section-tag">Experience</div>
+      <div class="section-title">WHAT I DO</div>
+    </div>
+    <div class="work-grid">
+      <div class="work-card reveal">
+        <div class="work-num">01</div>
+        <div class="work-icon">&#9881;</div>
+        <div class="work-title">Automation & Operational Efficiency</div>
+        <ul class="work-points">
+          <li>Built end-to-end Oracle &amp; Grid CPU patching framework for SCM — solo, from scratch. Reduced manual effort by ~70%.</li>
+          <li>DB Sanity Check script covering status, invalid objects, component validity, tablespace, services.</li>
+          <li>Deployed table maintenance scripts for Defrag, Purging, and Tab Modification across SCM &amp; Retail Prod.</li>
+          <li>Champion of automation-first culture within the team.</li>
+        </ul>
+      </div>
+      <div class="work-card blue reveal">
+        <div class="work-num">02</div>
+        <div class="work-icon">&#128737;</div>
+        <div class="work-title">Production Stability & Incident Response</div>
+        <ul class="work-points">
+          <li>Hands-on resolution of multiple critical production incidents under tight SLA windows.</li>
+          <li>Support during batch failures, patching, and DB refresh — stepped up without formal assignment.</li>
+          <li>Managed Prod &amp; Non-Prod Oracle Retail DB estate: patching, refresh, maintenance, recovery.</li>
+          <li>Deep experience in CDB/PDB admin, space management, OEM alert handling, and object recovery.</li>
+        </ul>
+      </div>
+      <div class="work-card cyan reveal">
+        <div class="work-num">03</div>
+        <div class="work-icon">&#129302;</div>
+        <div class="work-title">Gen AI Advocacy & Learning</div>
+        <ul class="work-points">
+          <li>Driving force for Gen AI adoption within team and broader work environment.</li>
+          <li>Oracle AI Foundations + OCI Gen AI Professional + Microsoft/LinkedIn Gen AI Professional certs.</li>
+          <li>Self-learned Tableau and Informatica; gained WebLogic working knowledge.</li>
+          <li>Keep learnig new AI tools to keep me updated with AI</li>
+        </ul>
+      </div>
+      <div class="work-card reveal">
+        <div class="work-num">04</div>
+        <div class="work-icon">&#128203;</div>
+        <div class="work-title">Audit, Documentation & Standards</div>
+        <ul class="work-points">
+          <li>Handled audit extraction requirements with accuracy and on committed timelines.</li>
+          <li>Maintained full traceability and documentation for all audit deliveries.</li>
+          <li>Prepared and maintained SOPs and KB documents to standardize DBA ops.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <div class="section-tag">Built</div>
+      <div class="section-title">PROJECTS</div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-type">DBA Automation &bull; Shell</div>
+        <div class="project-name">SCM CPU Patching Framework</div>
+        <p class="project-desc">Complete end-to-end automated Oracle &amp; Grid patching pipeline for Supply Chain Management environments. Handles pre-checks, patching, post-validation, and rollback — built solo, delivered to production.</p>
+        <div class="project-tags">
+          <span class="project-tag">Shell</span>
+          <span class="project-tag">Oracle 19c</span>
+          <span class="project-tag">Grid Infrastructure</span>
+          <span class="project-tag">CDB/PDB</span>
+        </div>
+        <div class="project-result">&#10003; 70% manual effort reduction &bull; Team Production</div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-type">DBA Tooling &bull; Shell</div>
+        <div class="project-name">DB Sanity Check Framework</div>
+        <p class="project-desc">Automated post-patching and post-refresh health validation covering DB status, component validity, invalid objects, tablespace utilization, and service availability. Adopted as team standard.</p>
+        <div class="project-tags">
+          <span class="project-tag">Shell</span>
+          <span class="project-tag">Oracle SQL</span>
+          <span class="project-tag">OEM</span>
+        </div>
+        <div class="project-result">&#10003; Adopted as team standard</div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-type">Side Project &bull; Web App</div>
+        <div class="project-badge">&#9733; Personal Build</div>
+        <div class="project-name">Solo Level Up</div>
+        <p class="project-desc">Mobile-first gamified habit tracker inspired by Solo Leveling manhwa. Full RPG mechanics: XP curves, military ranks, HP as a real game mechanic, streak bonuses, smart penalties, reward inventory — local, no backend.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML/CSS/JS</span>
+          <span class="project-tag">PWA</span>
+          <span class="project-tag">LocalStorage</span>
+          <span class="project-tag">Gamification</span>
+        </div>
+        <a href="https://portfolio-aniruddha-puranik.vercel.app" target="_blank" class="project-link">View Portfolio &#8599;</a>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-type">DBA Automation &bull; Shell</div>
+        <div class="project-name">Table Maintenance Scripts</div>
+        <p class="project-desc">Suite of maintenance scripts covering Defragmentation, Purging (SCM Prod), and Tab Modification across SCM and Retail Production environments. Proactive space management, fully automated.</p>
+        <div class="project-tags">
+          <span class="project-tag">Shell</span>
+          <span class="project-tag">PL/SQL</span>
+          <span class="project-tag">Space Mgmt</span>
+        </div>
+        <div class="project-result">&#10003; Live in SCM + Retail Prod</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- RECOGNITION -->
+  <section id="recognition">
+    <div class="section-header reveal">
+      <div class="section-tag">Recognition</div>
+      <div class="section-title">AWARDS</div>
+    </div>
+    <div class="awards-grid">
+      <div class="award-card reveal">
+        <div class="award-icon">&#127942;</div>
+        <div class="award-title">Employee of the Month</div>
+        <div class="award-desc">Consistent high performance and reliability across production operations</div>
+      </div>
+      <div class="award-card reveal">
+        <div class="award-icon">&#127775;</div>
+        <div class="award-title">Employee of the Week</div>
+        <div class="award-desc">Recognized multiple times for critical incident resolution and ownership</div>
+      </div>
+      <div class="award-card reveal">
+        <div class="award-icon">&#127941;</div>
+        <div class="award-title">Certificate of Excellence</div>
+        <div class="award-desc">Awarded by client (Primark) for sustained quality and trust built over time</div>
+      </div>
+      <div class="award-card reveal">
+        <div class="award-icon">&#129351;</div>
+        <div class="award-title">TCS AI Hackathon — 2nd Place</div>
+        <div class="award-desc">TCS AI Friday Hackathon — top finisher among competing teams</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner reveal">
+      <div class="section-tag" style="justify-content:center">Get In Touch</div>
+      <div class="section-title" style="margin-bottom:1rem">CONTACT</div>
+      <p class="contact-line">Open to DBA roles, automation discussions, AI collaboration, or just talking databases.</p>
+      <a href="mailto:Aniruddha.puranik2001@gmail.com" class="btn-primary" style="margin:0 auto;display:inline-flex">
+        Send Email &#8594;
+      </a>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/aniruddha-puranik" target="_blank" class="contact-link">&#128279; LinkedIn</a>
+        <a href="https://github.com/Aniruddha-puranik" target="_blank" class="contact-link">&#128025; GitHub</a>
+        <a href="https://portfolio-aniruddha-puranik.vercel.app" target="_blank" class="contact-link">&#127760; Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Aniruddha Puranik &mdash; Oracle DBA &bull;
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
